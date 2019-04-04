@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad64e6c-b9eb-48f5-84e9-db9d8c12b163" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Modified Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Modified Code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_expressions_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_expressions_test1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_expressions_test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="264">
+              <caret line="225" column="14" lean-forward="true" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
                 <element signature="e#623#913#0" />
@@ -48,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/train_svm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2100">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
@@ -113,17 +110,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="Expression-Recognition" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Desktop/Expression-Recognition" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,7 +335,7 @@
       <workItem from="1554284299150" duration="1498000" />
       <workItem from="1554307165606" duration="194000" />
       <workItem from="1554367132211" duration="1836000" />
-      <workItem from="1554388615589" duration="2841000" />
+      <workItem from="1554388615589" duration="4555000" />
     </task>
     <task id="LOCAL-00001" summary="printing the prediction of emotion on the video ...">
       <created>1552238051890</created>
@@ -410,7 +397,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56951000" />
+    <option name="totallyTimeSpent" value="58665000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -478,7 +465,7 @@
     <entry file="file://$PROJECT_DIR$/train_svm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2100">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
           </folding>
@@ -497,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_expressions_test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="264">
+          <caret line="225" column="14" lean-forward="true" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
             <element signature="e#623#913#0" />

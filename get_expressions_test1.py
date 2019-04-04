@@ -1,5 +1,6 @@
 import cv2, glob, random, math, numpy as np, dlib, itertools
 from PIL import Image, ImageDraw, ImageFont
+import matplotlib.image as mpimg
 
 from sklearn.svm import SVC
 import os
@@ -219,22 +220,29 @@ print("begin testing")
 #     else:
 #         break
 currentframe = 0
-ret, frame = cap.read()
-if ret:
+# ret, frame = cap.read()
+# print(frame)
+frame = mpimg.imread('aaa.jpg')
+# print(frame)
+ret = frame
+# print(ret)
+    # cv2.imread('aaa.jpg')
+# print(frame)
+# if ret:
     # if video is still left continue creating images
     # name = "C:\\Users\\pc\\Desktop\\defence\\Modified Code\\Test\\" + str(currentframe) + '.jpg'
-    name = "store/aa.jpg"
-    print('Creating...' + name)
+name = "store/aa.jpg"
+print('Creating...' + name)
 
-    # writing the extracted images
-    cv2.waitKey(10)
-    cv2.imwrite(name, frame)
-    # cv2.imshow("Video", frame)
-    cv2.waitKey(10)
-    test_files(name)
-    # os.remove(name)
-    # increasing counter so that it will
-    # show how many frames are created
-    currentframe += 1
+# writing the extracted images
+cv2.waitKey(10)
+cv2.imwrite(name, frame)
+# cv2.imshow("Video", frame)
+cv2.waitKey(10)
+test_files(name)
+# os.remove(name)
+# increasing counter so that it will
+# show how many frames are created
+currentframe += 1
 cap.release()
 cv2.destroyAllWindows()
