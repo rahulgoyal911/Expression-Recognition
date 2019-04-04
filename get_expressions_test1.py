@@ -9,7 +9,7 @@ from sklearn.externals import joblib
 # Set paths for files
 test_path = "D:\\Defence Project\\emotion\\test\\"
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Initialise predictor
 clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -193,30 +193,48 @@ clf = joblib.load('big_dataset_linear.pkl')
 
 print("begin testing")
 
+# currentframe = 0
+# while cap.isOpened():
+#
+#     # if currentframe % 2 == 0:
+#     #     continue
+#
+#     ret, frame = cap.read()
+#
+#     if ret:
+#         # if video is still left continue creating images
+#         name = "C:\\Users\\pc\\Desktop\\defence\\Modified Code\\Test\\" + str(currentframe) + '.jpg'
+#         name = "store/aa.jpg"
+#         print('Creating...' + name)
+#
+#         # writing the extracted images
+#         cv2.imwrite(name, frame)
+#         # cv2.imshow("Video", frame)
+#         cv2.waitKey(10)
+#         test_files(name)
+#         os.remove(name)
+#         # increasing counter so that it will
+#         # show how many frames are created
+#         currentframe += 1
+#     else:
+#         break
 currentframe = 0
-while cap.isOpened():
+ret, frame = cap.read()
+if ret:
+    # if video is still left continue creating images
+    # name = "C:\\Users\\pc\\Desktop\\defence\\Modified Code\\Test\\" + str(currentframe) + '.jpg'
+    name = "store/aa.jpg"
+    print('Creating...' + name)
 
-    # if currentframe % 2 == 0:
-    #     continue
-
-    ret, frame = cap.read()
-
-    if ret:
-        # if video is still left continue creating images
-        name = "C:\\Users\\pc\\Desktop\\defence\\Modified Code\\Test\\" + str(currentframe) + '.jpg'
-        print('Creating...' + name)
-
-        # writing the extracted images
-        cv2.imwrite(name, frame)
-        # cv2.imshow("Video", frame)
-        cv2.waitKey(10)
-        test_files(name)
-        os.remove(name)
-        # increasing counter so that it will
-        # show how many frames are created
-        currentframe += 1
-    else:
-        break
-
+    # writing the extracted images
+    cv2.waitKey(10)
+    cv2.imwrite(name, frame)
+    # cv2.imshow("Video", frame)
+    cv2.waitKey(10)
+    test_files(name)
+    # os.remove(name)
+    # increasing counter so that it will
+    # show how many frames are created
+    currentframe += 1
 cap.release()
 cv2.destroyAllWindows()
