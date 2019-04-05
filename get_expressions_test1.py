@@ -10,7 +10,7 @@ from sklearn.externals import joblib
 # Set paths for files
 test_path = "D:\\Defence Project\\emotion\\test\\"
 
-cap = cv2.VideoCapture(1)
+# cap = cv2.VideoCapture(1)
 
 # Initialise predictor
 clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -244,5 +244,5 @@ test_files(name)
 # increasing counter so that it will
 # show how many frames are created
 currentframe += 1
-cap.release()
+# cap.release()
 cv2.destroyAllWindows()

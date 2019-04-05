@@ -29,14 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_expressions_test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="225" column="14" lean-forward="true" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-                <element signature="e#623#913#0" />
-                <element signature="e#977#3533#0" />
-                <element signature="e#4978#7292#0" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -209,6 +203,9 @@
       <module name="Modified Code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -397,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58665000" />
+    <option name="totallyTimeSpent" value="58670000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -410,7 +407,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="684" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1969697" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -484,14 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_expressions_test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="225" column="14" lean-forward="true" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-            <element signature="e#623#913#0" />
-            <element signature="e#977#3533#0" />
-            <element signature="e#4978#7292#0" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
