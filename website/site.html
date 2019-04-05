@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<input id="inputFileToLoad" type="file" accept="image/*" onchange="encodeImageFileAsURL();" />
+<p id="imgTest"></p>
+<script type='text/javascript'>
+  function encodeImageFileAsURL() {
+
+    var filesSelected = document.getElementById("inputFileToLoad").files;
+    if (filesSelected.length > 0) {
+      var fileToLoad = filesSelected[0];
+
+      var fileReader = new FileReader();
+
+      fileReader.onload = function(fileLoadedEvent) {
+        var srcData = fileLoadedEvent.target.result; // <--- data: base64
+        document.getElementById("imgTest").innerHTML = srcData;
+      }
+      fileReader.readAsDataURL(fileToLoad);
+    }
+  }
+</script>
