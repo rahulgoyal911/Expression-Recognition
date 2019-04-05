@@ -2,8 +2,9 @@
 <input id="inputFileToLoad" type="file" accept="image/*" onchange="encodeImageFileAsURL();" />
 <p id="imgTest"></p>
 <script type='text/javascript'>
-  function encodeImageFileAsURL() {
 
+  function encodeImageFileAsURL() {
+    
     var filesSelected = document.getElementById("inputFileToLoad").files;
     if (filesSelected.length > 0) {
       var fileToLoad = filesSelected[0];
@@ -13,6 +14,30 @@
       fileReader.onload = function(fileLoadedEvent) {
         var srcData = fileLoadedEvent.target.result; // <--- data: base64
         document.getElementById("imgTest").innerHTML = srcData;
+        var data = "{\"name\" : \"";
+        data +=srcData;
+        data+="\"}";
+        // document.getElementById("imgTest").innerHTML = data;
+  
+        var xhr = new XMLHttpRequest();
+        
+        
+        // httpRequest.withCredentials = false;
+        
+
+        xhr.addEventListener("readystatechange", function () {
+          if (this.readyState === 4) {
+            console.log(this.responseText);
+          }
+        });
+        
+        xhr.open("POST", "http://127.0.0.1:5000/lang");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader("Postman-Token", "eade1d5a-c4e4-4625-94b2-590636fb0444");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+
+        xhr.send(data);
       }
       fileReader.readAsDataURL(fileToLoad);
     }
