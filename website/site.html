@@ -27,7 +27,12 @@
 
         xhr.addEventListener("readystatechange", function () {
           if (this.readyState === 4) {
-            console.log(this.responseText);
+            d = JSON.parse(this.responseText);
+            console.log(d);
+            
+            var result = d['languages']['name'];
+            document.getElementById("imgTest").innerHTML = result;
+
           }
         });
         
