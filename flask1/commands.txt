@@ -1,0 +1,17 @@
+ mkdir todo-api
+ cd todo-api/
+ virtualenv flask
+ flask/bin/php install flask
+ cd flask
+ cd bin
+ cd php
+ pip install flask
+ pip install virtualenv
+ cd Desktop/todo-api/
+ cat > app.py
+ chmod a+x app.py
+ gedit app.py
+ ./app.py
+ 
+ 
+
